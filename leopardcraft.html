@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>LeopardCraft // RL86 Mod Hub</title>
@@ -8,13 +9,23 @@
         <hr/>
         <h1>LeopardCraft</h1>
         <img id = "leopardcraftlogo" class = "logo" src = "leopardcraftlogo.png">
-        <label for = "versions">Select version:</label>
-        <select name = "versions", id = "versions">
-            <option value = "1.15.2">Minecraft 1.15.2</option>
+        <label for = "mcversions">Select version:</label>
+        <select name = "mcversions" id = "mcversions" onselect = "find()">
+            <option value = "1.15.2" id = "1.15.2">Minecraft 1.15.2</option>
         </select>
+        <select name = "1-15-2v" id = "1-15-2v">
+            <option value = "0.1.0/1.15.2" id = "0.1.0/1.15.2">LeopardCraft v0.1.0 *recommended </option>
+            <option value = "0.2.0/1.15.2" id = "0.2.0/1.15.2">LeopardCraft v0.2.0 *latest </option>
+        </select>
+        <style>
+            #1-15-2v {
+                visibility: none;
+            }
+        </style>
         <a href = "https://github.com/RobotLeopard86/LeopardCraft/wiki" target = "_blank">Open LeopardCraft Wiki</a>
         <hr/>
         <h1 id = "leopardcraft-download">Click here to download LeopardCraft:</h3>
-        <a class = "download" href = "downloads/1.15.2/leopardcraft/leopardcraft-0.1.0.zip" download>Download</a>
+        <button class = "btn" onclick = "download()">Download</button>
+        <script src = "lc-versionscript.js"></script>
     </body>
 </html>
