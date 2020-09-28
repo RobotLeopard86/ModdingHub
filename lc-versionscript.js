@@ -10,12 +10,13 @@ function download(){
         switch(version){
             case "0.1.0/1.15.2":
                 document.createElement("a", "href = '" + v0_1_0$1_15_2 + "' download", "Download Now");
-                break;
+                return;
             case "0.2.0/1.15.2":
                 document.createElement("a", "href = '" + v0_2_0$1_15_2 + "' download", "Download Now");
-                break;
+                return;
             default:
-                break;
+                alert("Error: Version not found");
+                return;
         }
     }
 }
