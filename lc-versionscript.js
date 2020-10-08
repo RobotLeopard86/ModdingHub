@@ -13,15 +13,16 @@ function download(){
             case "0.1.0/1.15.2":
                 dlink.href = v0_1_0$1_15_2;
                 dlink.download = "";
-                return;
+                break;
             case "0.2.0/1.15.2":
                 ddlink.href = v0_2_0$1_15_2;
                 dlink.download = "";
-                return;
+                break;
             default:
                 alert("Error: Version not found");
-                return;
+                break;
         }
+        return;
     }
 }
 
